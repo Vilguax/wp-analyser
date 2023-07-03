@@ -9,6 +9,8 @@
     // si quelqu'un essaie d'accéder directement au plugin
     if (!defined('ABSPATH')) {exit;}
 
+    require_once plugin_dir_path(__FILE__) . 'function.php';
+
     add_action('admin_menu', 'wp_analyser_menu');
 
 function wp_analyser_menu() {
