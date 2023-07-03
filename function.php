@@ -50,37 +50,3 @@ function get_plugins_info() {
     // Retourner les informations sur les plugins
     return $plugins_info;
 }
-
-function wp_analyser_dashboard() {
-    // Récupérer les informations sur les thèmes et les plugins
-    $themes_info = get_themes_info();
-    $plugins_info = get_plugins_info();
-
-    // Générer le tableau des thèmes
-    echo '<h2>Themes</h2>';
-    echo '<table class="wp-analyser-table">';
-    echo '<tr><th>Name</th><th>Version</th><th>Author</th><th>Description</th></tr>';
-    foreach($themes_info as $theme) {
-        echo '<tr>';
-        echo '<td>' . $theme['name'] . '</td>';
-        echo '<td>' . $theme['version'] . '</td>';
-        echo '<td>' . $theme['author'] . '</td>';
-        echo '<td>' . $theme['description'] . '</td>';
-        echo '</tr>';
-    }
-    echo '</table>';
-
-    // Générer le tableau des plugins
-    echo '<h2>Plugins</h2>';
-    echo '<table class="wp-analyser-table">';
-    echo '<tr><th>Name</th><th>Version</th><th>Author</th><th>Description</th></tr>';
-    foreach($plugins_info as $plugin) {
-        echo '<tr>';
-        echo '<td>' . $plugin['name'] . '</td>';
-        echo '<td>' . $plugin['version'] . '</td>';
-        echo '<td>' . $plugin['author'] . '</td>';
-        echo '<td>' . $plugin['description'] . '</td>';
-        echo '</tr>';
-    }
-    echo '</table>';
-}
