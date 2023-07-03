@@ -1,0 +1,21 @@
+.wp-analyser-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.wp-analyser-table th, .wp-analyser-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.wp-analyser-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.wp-analyser-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
