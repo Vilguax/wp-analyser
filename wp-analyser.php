@@ -2,6 +2,7 @@
 /*
 Plugin Name: WP Analyser
 Plugin URI: http://www.wp-analyser.com
+Author: Axel Pelassa
 Description: This plugin will analyse your wordpress installation and provide you with a report on how to improve your wordpress installation.
 Version: 1.0
 */
@@ -62,9 +63,6 @@ function wp_analyser_dashboard() {
         echo '<td>' . $plugin['name'] . '</td>';
         echo '<td>' . $plugin['version'] . '</td>';
         echo '<td>' . $plugin['author'] . '</td>';
-        echo '<td>' . $plugin['descriptionJe suis désolé, la réponse a été coupée. Voici la suite du code :
-
-```php
         echo '<td>' . $plugin['description'] . '</td>';
         echo '</tr>';
     }
